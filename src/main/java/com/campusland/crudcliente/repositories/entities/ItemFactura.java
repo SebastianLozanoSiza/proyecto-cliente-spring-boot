@@ -19,13 +19,13 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ItemFactura implements Serializable{
+public class ItemFactura implements Serializable {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)    
     private Long id;
     private Integer cantidad;
-    @ManyToOne(fetch=FetchType.LAZY)
+    @ManyToOne()
     @JoinColumn(name = "producto_id")
     private Producto producto;
 

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import com.campusland.crudcliente.repositories.RepositoryStudent;
 import com.campusland.crudcliente.repositories.entities.Student;
 import com.campusland.crudcliente.repositories.entities.Tuition;
+import com.campusland.crudcliente.repositories.entities.University;
 import com.campusland.crudcliente.services.StudentService;
 
 import jakarta.transaction.Transactional;
